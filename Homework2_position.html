@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioned Boxes</title>
+    <style>
+        body {height: 200vh; padding: 0; margin: 0;}
+        .big {width: 50%; height: 50%;}
+        .small {width: 25%; height: 25%;}
+        .inside {width: 10%; height: 10%;}
+        .absolute {position: absolute;}
+        .relative {position: relative;}
+        .fixed {position: fixed;}
+        .top {top: 0;}
+        .left {left: 0;}
+        .right {right: 0;}
+        .bottom {bottom: 0;}
+        .center {top: 50%; left: 50%; transform: translate(-50%, -50%);}
+        .red {background-color: red;}
+        .green {background-color: green;}
+        .blue {background-color: blue;}
+        .yellow {background-color: yellow;}
+        .pink {background-color: deeppink;}
+        .white {background-color: white;}
+    </style>
+</head>
+<body>
+    <div class="red small fixed top left"></div>
+    <div class="green small fixed top right"></div>
+    <div class="blue small fixed bottom left"></div>
+    <div class="yellow small fixed bottom right"></div>
+
+    <div class="white big absolute center">
+        <div class="red inside absolute top left"></div>
+        <div class="green inside absolute top right"></div>
+        <div class="blue inside absolute bottom left"></div>
+        <div class="yellow inside absolute bottom right"></div>
+        <div class="pink inside absolute center"></div>
+    </div>
+</body>
+</html>
